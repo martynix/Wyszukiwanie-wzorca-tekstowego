@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "zadanie-ConsoleApp1",
+      "appliesTo": "ConsoleApp1.csproj",
+      "type": "msbuild"
+    }
+  ]
+}
