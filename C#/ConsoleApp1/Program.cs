@@ -27,7 +27,7 @@
 
     public void WyszukajWzorzec()
     {
-        int pozycja = test.IndexOf(wzorzec, StringComparison.OrdinalIgnoreCase);
+        int pozycja = test.IndexOf(wzorzec, StringComparison.OrdinalIgnoreCase); // Używamy IndexOf do znalezienia pierwszego wystąpienia wzorca w tekście
 
         if (pozycja == -1)
         {
@@ -39,7 +39,8 @@
             do
             {
                 Console.WriteLine($"Wzorzec występuje na pozycji: {pozycja + 1}");
-                pozycja = test.IndexOf(wzorzec, pozycja + 1, StringComparison.OrdinalIgnoreCase);
+                pozycja = test.IndexOf(wzorzec, pozycja + 1, StringComparison.OrdinalIgnoreCase); // Parametr pozycja + 1 oznacza,że szukamy kolejnego wystąpienia wzorca,
+                                                                                                  // pomijając przy tym znaleziony wcześniej fragment tekstu
             } while (pozycja != -1);
             Console.WriteLine();
         }
